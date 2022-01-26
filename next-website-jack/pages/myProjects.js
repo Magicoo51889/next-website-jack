@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export default function myProjectsPage({ Component, pageProps}) {
     return (
-        <div className="container">
+        <div className={styles.container}>
       
           <Head>
             <title>Create Next App</title>
@@ -11,11 +11,11 @@ export default function myProjectsPage({ Component, pageProps}) {
           </Head>
 
           <main>
-            <h1 className="title">
+            <h1 className={styles.title}>
               My Projects
             </h1>
 
-            <p className="description">
+            <p className={styles.description}>
               Browse my biggest projects to date!
             </p>
 
@@ -29,7 +29,7 @@ export default function myProjectsPage({ Component, pageProps}) {
               rel="noopener noreferrer"
             >
               Powered by{' '}
-              <img src="/vercel.svg" alt="Vercel" className="logo" />
+              <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
             </a>
           </footer>
       </div>

@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import styles from '../styles/Home.module.css'
+import React from 'react';
 
-export default function myProjectsPage({ Component, pageProps}) {
+export default function myProjectsPage() {
     return (
         <div className={styles.container}>
       

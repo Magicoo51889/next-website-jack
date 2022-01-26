@@ -28,7 +28,7 @@ export default function Home() {
             <p>A link straight to my Github so you can browse what I've done!</p>
           </a>
 
-          <a href="https://docs.google.com/document/d/1-pq8nXt9u4XX7Vtf-uBu9eUGs6SV0JxnK-tXd2rb0HA/edit?usp=sharing" className={styles.card}>
+          <a href="" className={styles.card}>
             <h2>My CV &rarr;</h2>
             <p>My CV showing what I've done and my workplace skills.</p>
           </a>

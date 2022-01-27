@@ -3,7 +3,7 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/index';
-import myProjectsPage from './next-website-jack/pages/myProjects';
+import myProjectsPage from './pages/myProjects';
 
 function App() {
 return (

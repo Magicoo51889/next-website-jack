@@ -18,8 +18,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          This is my personal website, displaying what I've done!
-         
+          This is my personal website, displaying what I've done (WIP)!
         </p>
 
         <div className={styles.grid}>
@@ -68,3 +67,4 @@ export default function Home() {
     </div>
   )
 }
+

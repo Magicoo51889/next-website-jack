@@ -5,23 +5,32 @@ import {
   Bars,
   NavMenu
 } from './NavbarElements';
+import styles from '../styles/Home.module.css'
 
-const Navbar = () => {
-    return (
+
+class Navbar extends React.Component {
+    render() {
+      return (
         <>
           <Nav>
             <Bars />
             <NavMenu>
-              <NavLink to='/pages/index' activeStyle>
+              <NavLink to='/pages/index' className={styles.Nav}>
                 Home
               </NavLink>
-              <NavLink to='/pages/myProjects' activeStyle>
+              <NavLink to='/pages/myProjects' className={styles.Nav}>
                 My Projects
               </NavLink>
             </NavMenu>
           </Nav>
         </>
-    );
+      );
+    };
 }
 
 export default Navbar;
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+);

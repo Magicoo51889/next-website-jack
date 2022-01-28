@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Nav,
-  NavLink,
-  Bars,
-  NavMenu
-} from './NavbarElements';
 import styles from '../styles/Home.module.css'
-
 
 class Navbar extends React.Component {
     render() {

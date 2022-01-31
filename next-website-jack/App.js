@@ -1,9 +1,10 @@
 import React from 'react';
-import { Home, Navbar } from './index';
+import { Home } from './pages/index'
+import Navbar from './components/Navbar';
 import myProjectsPage from './pages/myProjects';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-function App() {
+const App = () => {
     return (
       <Router>
 		<Navbar/>

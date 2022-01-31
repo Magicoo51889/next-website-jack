@@ -2,14 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import React from 'react';
-import App from './../App';
-import navbar from '../components/Navbar';
+import Navbar from '..';
 
-
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.container}>
-      <navbar/>
+      <Navbar/>
       <script src="./components/index.js" defer></script>
       <Head>
         <title>Jack Foot</title>
@@ -73,3 +71,4 @@ export default function Home() {
   )
 }
 
+export default Home();

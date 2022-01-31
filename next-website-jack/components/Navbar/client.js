@@ -1,1 +1,0 @@
-ReactDOM.hydrate(<App />, root)

@@ -1,13 +1,12 @@
 import React from 'react';
-import { Home } from './pages/index'
-import Navbar from './components/Navbar';
-import myProjectsPage from './pages/myProjects';
+import { Home, myProjectsPage } from './pages/'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Navbar from './components/Navbar/index';
 
 const App = () => {
     return (
       <Router>
-		<Navbar/>
+		  <Navbar/>
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='./myProjects' component={myProjectsPage} />
@@ -15,5 +14,13 @@ const App = () => {
       </Router>
     );
   }
+
+
+  ReactDOM.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    document.getElementById('root'),
+  );
 
 export default App;

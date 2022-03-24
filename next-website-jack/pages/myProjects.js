@@ -11,8 +11,9 @@ export default function myProjectsPage() {
           <Head>
             <title>Create Next App</title>
             <link rel="icon" href="/favicon.ico" />
+            <GithubCards />;
           </Head>
-
+          
           <main>
             <h1 className={styles.title}>
               My Projects

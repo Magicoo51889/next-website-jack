@@ -22,7 +22,6 @@ export default function myProjectsPage() {
             <p className={styles.description}>
               Browse my biggest projects to date!
             </p>
-
             
           </main>
 

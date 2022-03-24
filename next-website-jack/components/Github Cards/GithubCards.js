@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import baseURL from "../api/GitHub";
-import RepoCard from "./RepoCard";
+import RepoCard from "./RepoCards";
 import { Grid } from "@material-ui/core";
 
 class GitHubCards extends Component {

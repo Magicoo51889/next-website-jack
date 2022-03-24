@@ -6,7 +6,6 @@ import Navbar from './components/Navbar/index';
 import GithubCards from "./components/Github Cards/GitHubCards";
 
 const App = () => {
-
     return (
       <>
       <GithubCards />

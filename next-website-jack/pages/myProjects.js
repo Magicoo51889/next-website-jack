@@ -2,8 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export default function myProjectsPage() {
+const myProjectsPage = () => {
     return (
 
         <div className={styles.container}>
@@ -11,7 +13,6 @@ export default function myProjectsPage() {
           <Head>
             <title>Create Next App</title>
             <link rel="icon" href="/favicon.ico" />
-            <GithubCards />;
           </Head>
           
           <main>
@@ -26,14 +27,16 @@ export default function myProjectsPage() {
           </main>
 
           <footer>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            <Link
+              passHref="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
               Powered by{' '}
-              <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-            </a>
+              <Image src="/vercel.svg" alt="Vercel" className={styles.logo} />
+            </Link>
           </footer>
       </div>
 )};
+
+export default myProjectsPage();

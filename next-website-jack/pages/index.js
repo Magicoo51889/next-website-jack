@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -43,21 +44,21 @@ const Home = () => {
             <p>See my LinkedIn account to see my interests and skills.</p>
           </a>
 
-          <a
-            href="/myProjects"
+          <Link
+            passHref="/myProjects"
             className={styles.card}
           >
             <h2>My Main Projects &rarr;</h2>
             <p>
             This is a collection of my largest projects to date!
             </p>
-          </a>
+          </Link>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+        <Link
+          passHref="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -65,7 +66,7 @@ const Home = () => {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a>
+        </Link>
       </footer>
     </div>
   )

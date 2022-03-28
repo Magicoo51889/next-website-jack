@@ -10,10 +10,6 @@ COPY ["package.json", "package-lock.json*", "./"]
 RUN npm install --production
 
 COPY . .
-<<<<<<< Updated upstream
+
 RUN yarn install --production
 CMD ["node", "src/App.js"]
-=======
-
-CMD [ "node", "App.js" ]
->>>>>>> Stashed changes

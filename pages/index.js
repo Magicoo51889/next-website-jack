@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 const Home = () => {
   return (
+    
     <div className={styles.container}>
       <Navbar/>
       <script src="./components/index.js" defer></script>
@@ -31,7 +32,7 @@ const Home = () => {
             <p>A link straight to my Github so you can browse what I've done!</p>
           </a>
 
-          <a href="" className={styles.card}>
+          <a href="https://bit.ly/3iIzhqs" className={styles.card}>
             <h2>My CV &rarr;</h2>
             <p>My CV showing what I've done and my workplace skills.</p>
           </a>

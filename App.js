@@ -8,14 +8,14 @@ import GithubCards from "./components/Github Cards/GitHubCards";
 const App = () => {
     return (
       <>
-      <GithubCards />
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' exact element={Home} />
-          <Route path='./myProjects' element={myProjectsPage} />
-        </Routes>
-      </Router>
+        <GithubCards />
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path='/' exact element={Home} />
+            <Route path='./myProjects' element={myProjectsPage} />
+          </Routes>
+        </Router>
       </>
     );
   }

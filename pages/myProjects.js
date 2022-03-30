@@ -4,11 +4,11 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
-import ReactEmbedGist from 'react-embed-gist';
+import Gist from 'react-gist';
 
 const myProjectsPage = () => {
     return (
-
+      
         <div className={styles.container}>
           <Navbar />
           <Head>
@@ -26,22 +26,22 @@ const myProjectsPage = () => {
             </p>
 
             <p>
-              <ReactEmbedGist gist="Magicoo51889/next-website-jack" />
+              <Gist id="7b0517189a639622de2e2de1e2ff9daa18a7b94a" />
               <h2>My website</h2>
             </p>
 
             <p>
-              <ReactEmbedGist gist='Magicoo51889/Nand-2-Tetris' />
+              <Gist id="46575989e0435c65d65df943780a1493da6e51b9" />
               <h2>My OS through Nand to Tetris</h2>
             </p>
             
             <p>
-              <ReactEmbedGist gist='Magicoo51889/TS-OTHER-BOT' />
+              <Gist id="a573a7fd9c7401ff158faa34089f4e30a3295655" />
               <h2>My Discord bot, being made using typescript</h2>
             </p>
 
             <p>
-              <ReactEmbedGist gist='Magicoo51889/P5.js-drawing-tool' />
+              <Gist id="260f1cba9dabf3534ef79671e2d95ba17a6b0794" />
               <h2>A tool to make patterns using P5.js</h2>
             </p>
             
@@ -57,7 +57,8 @@ const myProjectsPage = () => {
               <Image src="/vercel.svg" alt="Vercel" className={styles.logo} />
             </Link>
           </footer>
-      </div>
+        </div>
+      
 )};
 
-export default myProjectsPage();
+export default myProjectsPage;

@@ -17,17 +17,17 @@ const Home = () => {
         </Head>
         <main className={styles.main}>
           <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">JackFoot!</a>
+            Welcome to <a href="">JackFoot!</a>
           </h1>
 
           <p className={styles.description}>
-            This is my personal website, displaying what I've done (WIP)!
+            This is my personal website, displaying what I've done!
           </p>
 
           <div className={styles.grid}>
             <a href="https://github.com/Magicoo51889" className={styles.card}>
               <h2>Github &rarr;</h2>
-              <p>A link straight to my Github so you can browse what I've done!</p>
+              <p>A link straight to my Github so you can browse the code I've produced!</p>
             </a>
 
             <a href="https://bit.ly/3iIzhqs" className={styles.card}>
@@ -40,7 +40,7 @@ const Home = () => {
               className={styles.card}
             >
               <h2>My LinkedIn &rarr;</h2>
-              <p>See my LinkedIn account to see my interests and skills.</p>
+              <p>See my LinkedIn account to see my expereince and skills.</p>
             </a>
 
             <Link
